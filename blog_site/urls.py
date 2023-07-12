@@ -2,6 +2,7 @@ from django.urls import include
 from django.contrib import admin
 from django.urls import path
 from rest_framework.authtoken import views
+from rest_framework.documentation import include_docs_urls
 
 """
 URL configuration for blog_site project.
@@ -25,4 +26,6 @@ urlpatterns = [
     path('api/', include('api.urls')),
     path('api-auth/', include('rest_framework.urls')),
     path('api-token-auth/', views.obtain_auth_token),
+    path('docs/', include_docs_urls(title='Posts API Documentation')),
+    path('user/', include('users.urls')),
 ]
