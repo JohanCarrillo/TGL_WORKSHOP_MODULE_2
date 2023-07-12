@@ -1,0 +1,16 @@
+name: django
+channels:
+  - defaults
+dependencies:
+  - python=3
+  - django
+  - djangorestframework
+  - markdown
+  - django-filter
+  - python-coreapi
+  - psycopg2-binary
+  - django-redis
+  - celery
+  - django-celery-results
+  - django-celery-beat
+prefix: C:\Users\JOHAN\miniconda3\envs\django
